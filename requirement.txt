@@ -1,0 +1,20 @@
+# Core RAG Framework
+llama-index>=0.10.0
+
+# Embedding & Reranking
+sentence-transformers>=2.2.2
+
+# Evaluation
+trulens-eval>=0.24.0
+
+# LLM Provider
+openai>=1.0.0
+
+# Vector Database
+chromadb>=0.4.0
+
+# Document Parsing
+pypdf>=3.0.0
+
+# Numerical Computation
+numpy>=1.24.0
