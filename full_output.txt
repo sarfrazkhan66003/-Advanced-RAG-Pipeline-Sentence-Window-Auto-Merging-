@@ -1,0 +1,75 @@
+2026-01-15 21:22:06,602 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2026-01-15 21:22:10,634 - INFO - 1 prompt is loaded, with the key: query
+2026-01-15 21:22:11,591 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+Number of documents: 4
+SUCCESS: Index created successfully!
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\correct_imports.py", line 68, in <module>
+    response = query_engine.query('How is the project deployed')
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index_instrumentation\dispatcher.py", line 335, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index\core\base\base_query_engine.py", line 44, in query
+    query_result = self._query(str_or_query_bundle)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index_instrumentation\dispatcher.py", line 335, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index\core\query_engine\retriever_query_engine.py", line 197, in _query
+    response = self._response_synthesizer.synthesize(
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index_instrumentation\dispatcher.py", line 335, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index\core\response_synthesizers\base.py", line 235, in synthesize
+    response_str = self.get_response(
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index_instrumentation\dispatcher.py", line 335, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index\core\response_synthesizers\compact_and_refine.py", line 43, in get_response
+    return super().get_response(
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index_instrumentation\dispatcher.py", line 335, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index\core\response_synthesizers\refine.py", line 179, in get_response
+    response = self._give_response_single(
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index\core\response_synthesizers\refine.py", line 241, in _give_response_single
+    program(
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index_instrumentation\dispatcher.py", line 335, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index\core\response_synthesizers\refine.py", line 85, in __call__
+    answer = self._llm.predict(
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index_instrumentation\dispatcher.py", line 335, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index\core\llms\llm.py", line 623, in predict
+    chat_response = self.chat(messages)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index_instrumentation\dispatcher.py", line 335, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index\llms\openai_like\base.py", line 173, in chat
+    return super().chat(messages, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index_instrumentation\dispatcher.py", line 335, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index\core\llms\callbacks.py", line 175, in wrapped_llm_chat
+    f_return_val = f(_self, messages, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index\llms\openai\base.py", line 399, in chat
+    return chat_fn(messages, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index\llms\openai\base.py", line 114, in wrapper
+    return retry(f)(self, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\tenacity\__init__.py", line 400, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\concurrent\futures\_base.py", line 438, in result
+    return self.__get_result()
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\concurrent\futures\_base.py", line 390, in __get_result
+    raise self._exception
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\llama_index\llms\openai\base.py", line 495, in _chat
+    response = client.chat.completions.create(
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\openai\resources\chat\completions\completions.py", line 1192, in create
+    return self._post(
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\openai\_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}

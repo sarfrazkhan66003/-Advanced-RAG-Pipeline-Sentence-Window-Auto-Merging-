@@ -1,0 +1,3 @@
+Loaded 4 documents
+Merged document length: 3698 characters
+Document loaded and merged: 3698 characters

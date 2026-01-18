@@ -1,0 +1,12 @@
+C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\site-packages\munch\__init__.py:24: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2026-01-15 20:55:48,219 - INFO - setup plugin alembic.autogenerate.schemas
+2026-01-15 20:55:48,219 - INFO - setup plugin alembic.autogenerate.tables
+2026-01-15 20:55:48,219 - INFO - setup plugin alembic.autogenerate.types
+2026-01-15 20:55:48,220 - INFO - setup plugin alembic.autogenerate.constraints
+2026-01-15 20:55:48,220 - INFO - setup plugin alembic.autogenerate.defaults
+2026-01-15 20:55:48,220 - INFO - setup plugin alembic.autogenerate.comments
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\utils.py", line 24, in <module>
+    from trulens.providers.openai.provider import OpenAI as fOpenAI
+ModuleNotFoundError: No module named 'trulens.providers'

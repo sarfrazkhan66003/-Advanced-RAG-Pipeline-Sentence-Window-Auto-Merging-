@@ -1,0 +1,9 @@
+2026-01-15 20:59:18,301 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2026-01-15 20:59:21,989 - INFO - 1 prompt is loaded, with the key: query
+Number of documents: 4
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\correct_imports.py", line 52, in <module>
+    print("\u2705 Index created successfully!")
+  File "C:\Users\DELL\OneDrive\Desktop\Sarfraz\PW Data Science\Project\RAG_Application_Using_LLM\venv\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>

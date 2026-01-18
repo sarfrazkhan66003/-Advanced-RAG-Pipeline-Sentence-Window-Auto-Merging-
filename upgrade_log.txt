@@ -1,0 +1,2 @@
+Requirement already satisfied: pypdf in c:\users\dell\onedrive\desktop\sarfraz\pw data science\project\rag_application_using_llm\venv\lib\site-packages (6.6.0)
+Requirement already satisfied: typing_extensions>=4.0 in c:\users\dell\appdata\roaming\python\python310\site-packages (from pypdf) (4.15.0)

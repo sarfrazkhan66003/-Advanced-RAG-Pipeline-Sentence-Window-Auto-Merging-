@@ -1,0 +1,3 @@
+PyMuPDFReader imported successfully from llama_index.readers.file
+Attempting to load PDF with PyMuPDFReader...
+Number of documents: 4

@@ -1,0 +1,7 @@
+2026-01-15 21:22:57,794 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2026-01-15 21:23:01,705 - INFO - 1 prompt is loaded, with the key: query
+2026-01-15 21:23:02,777 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+Number of documents: 4
+SUCCESS: Index created successfully!
+The project is deployed using AWS ECR and AWS EC2. To deploy, a Docker image is created and checked locally. Then, workflows are added to the GitHub repository using a .yaml script. An IAM User is created with necessary policies, and access keys are generated. An ECR repository is created, and an EC2 instance is set up with the necessary packages for Docker. A GitHub Actions runner is initiated and configured on the EC2 instance. Finally, secret keys are created in GitHub Actions to complete the deployment process.
+DONE: All imports are correct for llama_index v0.10+

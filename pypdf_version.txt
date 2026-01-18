@@ -1,0 +1,10 @@
+Name: pypdf
+Version: 6.6.0
+Summary: A pure-python PDF library capable of splitting, merging, cropping, and transforming PDF files
+Home-page: 
+Author: 
+Author-email: Mathieu Fenniak <biziqe@mathieu.fenniak.net>
+License-Expression: BSD-3-Clause
+Location: c:\users\dell\onedrive\desktop\sarfraz\pw data science\project\rag_application_using_llm\venv\lib\site-packages
+Requires: typing_extensions
+Required-by: llama-index-readers-file
